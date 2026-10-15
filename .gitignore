@@ -16,3 +16,4 @@ crash.*.log
 # Sensitive variable files
 *.tfvars
 *.tfvars.json
+academy.txt
