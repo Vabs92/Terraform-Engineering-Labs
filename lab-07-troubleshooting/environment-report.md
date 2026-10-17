@@ -33,6 +33,19 @@ I used pwd to check where I was, then moved back into the correct folder and ran
 
 I took screenshots showing the errors I encountered and the results after fixing them. I'll include them here to show how I tested and verified my work.
 
+### Challenge A — Syntax Error
+
+![Syntax error](screenshots/01-syntax-error.png)
+
+![Syntax fixed](screenshots/02-syntax-fixed.png)
+
+### Challenge B — Wrong Directory
+
+![Wrong directory](screenshots/03-wrong-directory.png)
+
+![Correct directory](screenshots/04-correct-directory.png)
+
+
 ## What I Learned
 
 These challenges helped me understand that troubleshooting is not just about running commands until something works.
