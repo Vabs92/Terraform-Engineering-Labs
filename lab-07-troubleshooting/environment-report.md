@@ -45,6 +45,16 @@ I took screenshots showing the errors I encountered and the results after fixing
 
 ![Correct directory](screenshots/04-correct-directory.png)
 
+### Challenge C — Provider Initialisation
+
+I ran terraform init to check if Terraform could set everything up and download the provider it needed.
+
+The command worked without any errors, so I didn't need to fix anything.
+
+This helped me understand that I should always check the results first instead of assuming there's a problem.
+
+![Terraform init success](screenshots/05-terraform-init-success.png)
+
 
 ## What I Learned
 
