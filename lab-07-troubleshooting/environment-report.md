@@ -55,9 +55,50 @@ This helped me understand that I should always check the results first instead o
 
 ![Terraform init success](screenshots/05-terraform-init-success.png)
 
+### Challenge D — Unexpected Plan
+
+I started by running terraform plan to see what Terraform was planning to do.
+
+The result showed *1 to add, 0 to change and 0 to destroy*.
+
+I wanted to understand why, so I checked the Terraform state and found that there was no state file. I also checked for academy.txt, but the file wasn't there.
+
+After that, I changed the text in main.tf and ran terraform plan again. The result was still the same because Terraform hadn't created the file yet.
+
+What I learned from this challenge is that I shouldn't just run terraform apply without checking first. I need to understand what Terraform wants to do and why.
+
+### Screenshot Evidence
+
+![First Terraform plan](screenshots/06-unexpected-plan.png)
+
+![No state file](screenshots/07-no-state-file.png)
+
+![File not found](screenshots/08-file-not-found.png)
+
+![Plan after changing content](screenshots/09-updated-plan.png)
+
+### Challenge E — Verification Failure
+
+I ran terraform apply to create academy.txt.
+Terraform successfully created one resource without any errors.
+
+![Terraform apply successful](screenshots/10-terraform-apply-success.png)
+
+I checked academy.txt after applying the configuration.
+
+The file contained the same text as main.tf,
+so I confirmed that Terraform created it correctly.
+
+![File verification successful](screenshots/11-file-verification-success.png)
+
+
 
 ## What I Learned
 
-These challenges helped me understand that troubleshooting is not just about running commands until something works.
+This lab taught me how to troubleshoot Terraform problems step by step.
 
-I need to understand the problem, check what caused it, make the correction and test again to make sure everything is working properly.
+I learned that even a small mistake in the configuration can cause an error. I also learned why it's important to run Terraform commands in the correct folder.
+
+Another important lesson was to check terraform plan before applying changes, so I understand what Terraform is going to do.
+
+Finally, I learned that a successful deployment is not enough on its own. I still need to check the actual file to make sure everything worked as expected.
