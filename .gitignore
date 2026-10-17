@@ -3,7 +3,7 @@
 
 # Terraform state files
 *.tfstate
-.tfstate.
+*.tfstate.*
 
 # Saved Terraform plans
 tfplan
