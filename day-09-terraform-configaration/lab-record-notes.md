@@ -46,3 +46,13 @@ I corrected the name and ran the plan again. This time, Terraform showed *No cha
 What I learned:
 
 I learned that Terraform doesn't allow duplicate variable names in the same module. I also learned why it's important to check the Terraform plan before applying changes, so I can understand what Terraform wants to do and avoid unnecessary changes.
+
+## Lab 03 — Understanding Terraform Outputs
+
+In this lab, I learned how to use Terraform outputs to see information from my configuration.
+
+I created two outputs. One shows where my academy profile file is saved, and the other shows what's written inside the file.
+
+I ran terraform output to display both results, then checked each one separately.
+
+This helped me understand how Terraform makes it easier to find useful information without opening files and checking everything manually.
