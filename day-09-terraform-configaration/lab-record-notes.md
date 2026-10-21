@@ -74,3 +74,31 @@ I ran terraform apply and everything worked. After that, I used terraform output
 What I learned:
 
 I now understand that locals help me avoid repeating the same information in my code. They also make my configuration easier to read and manage.
+
+## Lab 05 — Understanding Terraform Data Sources
+
+### What I did
+
+In this lab, I learned how to use Terraform to read information from an existing file.
+
+I created a policy file, then used data.tf to tell Terraform where to find it. I also added an output so I could see the information in my terminal.
+
+### How I tested it
+
+I started by running terraform validate to check for errors.
+
+After that, I ran terraform plan to see what Terraform was going to do. Everything looked fine, so I ran terraform apply.
+
+I then used terraform output to check that Terraform could display the policies.
+
+Later, I added another policy to the file and tested it again. Terraform picked up the new information.
+
+### What I learned
+
+I now understand that a Terraform resource is used to manage something, while a data source reads information that already exists.
+
+I also learned that when information changes, Terraform can read the updated version without creating new resources.
+
+### My result
+
+My lab worked successfully. Terraform displayed all four policies, and no infrastructure resources were added, changed or destroyed.
