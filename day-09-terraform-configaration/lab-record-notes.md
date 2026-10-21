@@ -56,3 +56,21 @@ I created two outputs. One shows where my academy profile file is saved, and the
 I ran terraform output to display both results, then checked each one separately.
 
 This helped me understand how Terraform makes it easier to find useful information without opening files and checking everything manually.
+
+## Lab 04 – Understanding Terraform Locals
+
+In this lab, I learned how to use Terraform locals to make my work easier.
+
+I created a locals.tf file where I kept some values that I wanted to use again in my configuration.
+
+I then updated main.tf to use those values instead of writing the same information over and over.
+
+After making the changes, I ran terraform fmt and terraform validate to check my work.
+
+I also ran terraform plan to see what Terraform was going to change. I noticed that it needed to replace my academy profile file because I had updated the information inside it.
+
+I ran terraform apply and everything worked. After that, I used terraform output to check the results.
+
+What I learned:
+
+I now understand that locals help me avoid repeating the same information in my code. They also make my configuration easier to read and manage.
