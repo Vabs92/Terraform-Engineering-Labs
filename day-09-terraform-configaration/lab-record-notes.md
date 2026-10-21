@@ -32,3 +32,17 @@ I learned that checking my tools and making sure I'm in the correct folder can h
 I also learned why keeping my files, notes and screenshots organised is important when working on Terraform projects.
 
 These are good habits I want to continue practising as I learn Cloud Engineering and DevOps.
+
+## Terraform Variable Troubleshooting
+
+While working on my Terraform lab, I got an error because I had created the same variables in both version.tf and variables.tf.
+
+I checked the files and realised what was causing the problem. I removed the duplicate variables from version.tf and kept them in variables.tf.
+
+After that, I ran terraform validate, and it passed. When I ran terraform plan, I noticed Terraform wanted to replace a file because the student name had changed.
+
+I corrected the name and ran the plan again. This time, Terraform showed *No changes*.
+
+What I learned:
+
+I learned that Terraform doesn't allow duplicate variable names in the same module. I also learned why it's important to check the Terraform plan before applying changes, so I can understand what Terraform wants to do and avoid unnecessary changes.
