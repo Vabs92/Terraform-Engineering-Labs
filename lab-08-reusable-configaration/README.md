@@ -74,3 +74,4 @@ I also got more practice using Git and GitHub to save my work and keep track of 
 One thing I learned is that I should always check my files before uploading them to GitHub, especially to avoid sharing sensitive information.
 
 This lab helped me understand that being a Cloud/DevOps engineer is not just about writing code. It's also about keeping your work organised, secure and easy for others to understand.
+
