@@ -13,5 +13,5 @@ variable "student_name" {
 variable "environment" {
   description = "The environment for this exercise"
   type        = string
-  default     = "training"
+  default     = "development"
 }
